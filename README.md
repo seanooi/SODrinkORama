@@ -1,4 +1,4 @@
-DrinkORama
+SODrinkORama
 ==========
 
 Espresso bar slot machine
