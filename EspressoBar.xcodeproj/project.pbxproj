@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14305A24187B1C0C00C7AC8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14305A23187B1C0C00C7AC8B /* Foundation.framework */; };
+		14305A26187B1C0C00C7AC8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14305A25187B1C0C00C7AC8B /* CoreGraphics.framework */; };
+		14305A28187B1C0C00C7AC8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14305A27187B1C0C00C7AC8B /* UIKit.framework */; };
+		14305A2E187B1C0C00C7AC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14305A2C187B1C0C00C7AC8B /* InfoPlist.strings */; };
+		14305A30187B1C0C00C7AC8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14305A2F187B1C0C00C7AC8B /* main.m */; };
+		14305A34187B1C0C00C7AC8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14305A33187B1C0C00C7AC8B /* AppDelegate.m */; };
+		14305A37187B1C0C00C7AC8B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14305A35187B1C0C00C7AC8B /* Main_iPhone.storyboard */; };
+		14305A3A187B1C0C00C7AC8B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14305A38187B1C0C00C7AC8B /* Main_iPad.storyboard */; };
+		14305A3D187B1C0C00C7AC8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14305A3C187B1C0C00C7AC8B /* ViewController.m */; };
+		14305A3F187B1C0C00C7AC8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14305A3E187B1C0C00C7AC8B /* Images.xcassets */; };
+		14305A46187B1C0C00C7AC8B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14305A45187B1C0C00C7AC8B /* XCTest.framework */; };
+		14305A47187B1C0C00C7AC8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14305A23187B1C0C00C7AC8B /* Foundation.framework */; };
+		14305A48187B1C0C00C7AC8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14305A27187B1C0C00C7AC8B /* UIKit.framework */; };
+		14305A50187B1C0C00C7AC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14305A4E187B1C0C00C7AC8B /* InfoPlist.strings */; };
+		14305A52187B1C0C00C7AC8B /* EspressoBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14305A51187B1C0C00C7AC8B /* EspressoBarTests.m */; };
+		14305A5D187B1CC400C7AC8B /* ZCSlotMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 14305A5C187B1CC400C7AC8B /* ZCSlotMachine.m */; };
+		14305A73187B1CD800C7AC8B /* beans.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A5F187B1CD700C7AC8B /* beans.png */; };
+		14305A74187B1CD800C7AC8B /* beans@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A60187B1CD700C7AC8B /* beans@2x.png */; };
+		14305A75187B1CD800C7AC8B /* coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A61187B1CD700C7AC8B /* coffee.png */; };
+		14305A76187B1CD800C7AC8B /* coffee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A62187B1CD700C7AC8B /* coffee@2x.png */; };
+		14305A77187B1CD800C7AC8B /* espresso.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A63187B1CD800C7AC8B /* espresso.png */; };
+		14305A78187B1CD800C7AC8B /* espresso@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A64187B1CD800C7AC8B /* espresso@2x.png */; };
+		14305A79187B1CD800C7AC8B /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A65187B1CD800C7AC8B /* filter.png */; };
+		14305A7A187B1CD800C7AC8B /* filter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A66187B1CD800C7AC8B /* filter@2x.png */; };
+		14305A7B187B1CD800C7AC8B /* grounds.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A67187B1CD800C7AC8B /* grounds.png */; };
+		14305A7C187B1CD800C7AC8B /* grounds@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A68187B1CD800C7AC8B /* grounds@2x.png */; };
+		14305A7D187B1CD800C7AC8B /* leaves.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A69187B1CD800C7AC8B /* leaves.png */; };
+		14305A7E187B1CD800C7AC8B /* leaves@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A6A187B1CD800C7AC8B /* leaves@2x.png */; };
+		14305A81187B1CD800C7AC8B /* strainer.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A6D187B1CD800C7AC8B /* strainer.png */; };
+		14305A82187B1CD800C7AC8B /* strainer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A6E187B1CD800C7AC8B /* strainer@2x.png */; };
+		14305A83187B1CD800C7AC8B /* tamper.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A6F187B1CD800C7AC8B /* tamper.png */; };
+		14305A84187B1CD800C7AC8B /* tamper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A70187B1CD800C7AC8B /* tamper@2x.png */; };
+		14305A85187B1CD800C7AC8B /* teapot.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A71187B1CD800C7AC8B /* teapot.png */; };
+		14305A86187B1CD800C7AC8B /* teapot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A72187B1CD800C7AC8B /* teapot@2x.png */; };
+		14305A8D187B427400C7AC8B /* coffee_cup.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A87187B427400C7AC8B /* coffee_cup.png */; };
+		14305A8E187B427400C7AC8B /* coffee_cup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A88187B427400C7AC8B /* coffee_cup@2x.png */; };
+		14305A8F187B427400C7AC8B /* espresso_cup.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A89187B427400C7AC8B /* espresso_cup.png */; };
+		14305A90187B427400C7AC8B /* espresso_cup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A8A187B427400C7AC8B /* espresso_cup@2x.png */; };
+		14305A91187B427400C7AC8B /* tea_cup.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A8B187B427400C7AC8B /* tea_cup.png */; };
+		14305A92187B427400C7AC8B /* tea_cup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14305A8C187B427400C7AC8B /* tea_cup@2x.png */; };
+		14BAD1E3187B9B3B0002A38E /* cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD1DF187B9B3B0002A38E /* cover@2x.png */; };
+		14BAD1E4187B9B3B0002A38E /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD1E0187B9B3B0002A38E /* cover.png */; };
+		14BAD1E5187B9B3B0002A38E /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD1E1187B9B3B0002A38E /* bg@2x.png */; };
+		14BAD1E6187B9B3B0002A38E /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD1E2187B9B3B0002A38E /* bg.png */; };
+		14BAD1EB187B9F8B0002A38E /* resizableButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD1E7187B9F8B0002A38E /* resizableButton@2x.png */; };
+		14BAD1EC187B9F8B0002A38E /* resizableButtonHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD1E8187B9F8B0002A38E /* resizableButtonHighlighted.png */; };
+		14BAD1ED187B9F8B0002A38E /* resizableButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD1E9187B9F8B0002A38E /* resizableButton.png */; };
+		14BAD1EE187B9F8B0002A38E /* resizableButtonHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD1EA187B9F8B0002A38E /* resizableButtonHighlighted@2x.png */; };
+		14BAD1F1187BA2E60002A38E /* tileable_wood_texture_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD1EF187BA2E60002A38E /* tileable_wood_texture_@2X.png */; };
+		14BAD1F2187BA2E60002A38E /* tileable_wood_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD1F0187BA2E60002A38E /* tileable_wood_texture.png */; };
+		14BAD1F4187BA3CC0002A38E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BAD1F3187BA3CC0002A38E /* QuartzCore.framework */; };
+		E9A639AFDF554F4EAA039FF6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E44AC805814C43E4BB518E54 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14305A49187B1C0C00C7AC8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14305A18187B1C0C00C7AC8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14305A1F187B1C0C00C7AC8B;
+			remoteInfo = EspressoBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14305A20187B1C0C00C7AC8B /* EspressoBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EspressoBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14305A23187B1C0C00C7AC8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14305A25187B1C0C00C7AC8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14305A27187B1C0C00C7AC8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		14305A2B187B1C0C00C7AC8B /* EspressoBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EspressoBar-Info.plist"; sourceTree = "<group>"; };
+		14305A2D187B1C0C00C7AC8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14305A2F187B1C0C00C7AC8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14305A31187B1C0C00C7AC8B /* EspressoBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EspressoBar-Prefix.pch"; sourceTree = "<group>"; };
+		14305A32187B1C0C00C7AC8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14305A33187B1C0C00C7AC8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14305A36187B1C0C00C7AC8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		14305A39187B1C0C00C7AC8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		14305A3B187B1C0C00C7AC8B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14305A3C187B1C0C00C7AC8B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14305A3E187B1C0C00C7AC8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		14305A44187B1C0C00C7AC8B /* EspressoBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EspressoBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14305A45187B1C0C00C7AC8B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		14305A4D187B1C0C00C7AC8B /* EspressoBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EspressoBarTests-Info.plist"; sourceTree = "<group>"; };
+		14305A4F187B1C0C00C7AC8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14305A51187B1C0C00C7AC8B /* EspressoBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspressoBarTests.m; sourceTree = "<group>"; };
+		14305A5B187B1CC400C7AC8B /* ZCSlotMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSlotMachine.h; sourceTree = "<group>"; };
+		14305A5C187B1CC400C7AC8B /* ZCSlotMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSlotMachine.m; sourceTree = "<group>"; };
+		14305A5F187B1CD700C7AC8B /* beans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beans.png; sourceTree = "<group>"; };
+		14305A60187B1CD700C7AC8B /* beans@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beans@2x.png"; sourceTree = "<group>"; };
+		14305A61187B1CD700C7AC8B /* coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffee.png; sourceTree = "<group>"; };
+		14305A62187B1CD700C7AC8B /* coffee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee@2x.png"; sourceTree = "<group>"; };
+		14305A63187B1CD800C7AC8B /* espresso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = espresso.png; sourceTree = "<group>"; };
+		14305A64187B1CD800C7AC8B /* espresso@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "espresso@2x.png"; sourceTree = "<group>"; };
+		14305A65187B1CD800C7AC8B /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
+		14305A66187B1CD800C7AC8B /* filter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter@2x.png"; sourceTree = "<group>"; };
+		14305A67187B1CD800C7AC8B /* grounds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grounds.png; sourceTree = "<group>"; };
+		14305A68187B1CD800C7AC8B /* grounds@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grounds@2x.png"; sourceTree = "<group>"; };
+		14305A69187B1CD800C7AC8B /* leaves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaves.png; sourceTree = "<group>"; };
+		14305A6A187B1CD800C7AC8B /* leaves@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leaves@2x.png"; sourceTree = "<group>"; };
+		14305A6D187B1CD800C7AC8B /* strainer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strainer.png; sourceTree = "<group>"; };
+		14305A6E187B1CD800C7AC8B /* strainer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "strainer@2x.png"; sourceTree = "<group>"; };
+		14305A6F187B1CD800C7AC8B /* tamper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tamper.png; sourceTree = "<group>"; };
+		14305A70187B1CD800C7AC8B /* tamper@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tamper@2x.png"; sourceTree = "<group>"; };
+		14305A71187B1CD800C7AC8B /* teapot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teapot.png; sourceTree = "<group>"; };
+		14305A72187B1CD800C7AC8B /* teapot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teapot@2x.png"; sourceTree = "<group>"; };
+		14305A87187B427400C7AC8B /* coffee_cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffee_cup.png; sourceTree = "<group>"; };
+		14305A88187B427400C7AC8B /* coffee_cup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee_cup@2x.png"; sourceTree = "<group>"; };
+		14305A89187B427400C7AC8B /* espresso_cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = espresso_cup.png; sourceTree = "<group>"; };
+		14305A8A187B427400C7AC8B /* espresso_cup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "espresso_cup@2x.png"; sourceTree = "<group>"; };
+		14305A8B187B427400C7AC8B /* tea_cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tea_cup.png; sourceTree = "<group>"; };
+		14305A8C187B427400C7AC8B /* tea_cup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tea_cup@2x.png"; sourceTree = "<group>"; };
+		14BAD1DF187B9B3B0002A38E /* cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover@2x.png"; sourceTree = "<group>"; };
+		14BAD1E0187B9B3B0002A38E /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
+		14BAD1E1187B9B3B0002A38E /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		14BAD1E2187B9B3B0002A38E /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		14BAD1E7187B9F8B0002A38E /* resizableButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resizableButton@2x.png"; sourceTree = "<group>"; };
+		14BAD1E8187B9F8B0002A38E /* resizableButtonHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resizableButtonHighlighted.png; sourceTree = "<group>"; };
+		14BAD1E9187B9F8B0002A38E /* resizableButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resizableButton.png; sourceTree = "<group>"; };
+		14BAD1EA187B9F8B0002A38E /* resizableButtonHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resizableButtonHighlighted@2x.png"; sourceTree = "<group>"; };
+		14BAD1EF187BA2E60002A38E /* tileable_wood_texture_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tileable_wood_texture_@2X.png"; sourceTree = "<group>"; };
+		14BAD1F0187BA2E60002A38E /* tileable_wood_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileable_wood_texture.png; sourceTree = "<group>"; };
+		14BAD1F3187BA3CC0002A38E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D99AD09FA75E4A7A90D2702B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E44AC805814C43E4BB518E54 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14305A1D187B1C0C00C7AC8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BAD1F4187BA3CC0002A38E /* QuartzCore.framework in Frameworks */,
+				14305A26187B1C0C00C7AC8B /* CoreGraphics.framework in Frameworks */,
+				14305A28187B1C0C00C7AC8B /* UIKit.framework in Frameworks */,
+				14305A24187B1C0C00C7AC8B /* Foundation.framework in Frameworks */,
+				E9A639AFDF554F4EAA039FF6 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14305A41187B1C0C00C7AC8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14305A46187B1C0C00C7AC8B /* XCTest.framework in Frameworks */,
+				14305A48187B1C0C00C7AC8B /* UIKit.framework in Frameworks */,
+				14305A47187B1C0C00C7AC8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14305A17187B1C0C00C7AC8B = {
+			isa = PBXGroup;
+			children = (
+				14305A29187B1C0C00C7AC8B /* EspressoBar */,
+				14305A4B187B1C0C00C7AC8B /* EspressoBarTests */,
+				14305A22187B1C0C00C7AC8B /* Frameworks */,
+				14305A21187B1C0C00C7AC8B /* Products */,
+				D99AD09FA75E4A7A90D2702B /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		14305A21187B1C0C00C7AC8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14305A20187B1C0C00C7AC8B /* EspressoBar.app */,
+				14305A44187B1C0C00C7AC8B /* EspressoBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14305A22187B1C0C00C7AC8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD1F3187BA3CC0002A38E /* QuartzCore.framework */,
+				14305A23187B1C0C00C7AC8B /* Foundation.framework */,
+				14305A25187B1C0C00C7AC8B /* CoreGraphics.framework */,
+				14305A27187B1C0C00C7AC8B /* UIKit.framework */,
+				14305A45187B1C0C00C7AC8B /* XCTest.framework */,
+				E44AC805814C43E4BB518E54 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14305A29187B1C0C00C7AC8B /* EspressoBar */ = {
+			isa = PBXGroup;
+			children = (
+				14305A32187B1C0C00C7AC8B /* AppDelegate.h */,
+				14305A33187B1C0C00C7AC8B /* AppDelegate.m */,
+				14305A35187B1C0C00C7AC8B /* Main_iPhone.storyboard */,
+				14305A38187B1C0C00C7AC8B /* Main_iPad.storyboard */,
+				14305A3B187B1C0C00C7AC8B /* ViewController.h */,
+				14305A3C187B1C0C00C7AC8B /* ViewController.m */,
+				14305A5B187B1CC400C7AC8B /* ZCSlotMachine.h */,
+				14305A5C187B1CC400C7AC8B /* ZCSlotMachine.m */,
+				14305A3E187B1C0C00C7AC8B /* Images.xcassets */,
+				14305A5E187B1CD700C7AC8B /* images */,
+				14305A2A187B1C0C00C7AC8B /* Supporting Files */,
+			);
+			path = EspressoBar;
+			sourceTree = "<group>";
+		};
+		14305A2A187B1C0C00C7AC8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14305A2B187B1C0C00C7AC8B /* EspressoBar-Info.plist */,
+				14305A2C187B1C0C00C7AC8B /* InfoPlist.strings */,
+				14305A2F187B1C0C00C7AC8B /* main.m */,
+				14305A31187B1C0C00C7AC8B /* EspressoBar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14305A4B187B1C0C00C7AC8B /* EspressoBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				14305A51187B1C0C00C7AC8B /* EspressoBarTests.m */,
+				14305A4C187B1C0C00C7AC8B /* Supporting Files */,
+			);
+			path = EspressoBarTests;
+			sourceTree = "<group>";
+		};
+		14305A4C187B1C0C00C7AC8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14305A4D187B1C0C00C7AC8B /* EspressoBarTests-Info.plist */,
+				14305A4E187B1C0C00C7AC8B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14305A5E187B1CD700C7AC8B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD1EF187BA2E60002A38E /* tileable_wood_texture_@2X.png */,
+				14BAD1F0187BA2E60002A38E /* tileable_wood_texture.png */,
+				14BAD1E7187B9F8B0002A38E /* resizableButton@2x.png */,
+				14BAD1E8187B9F8B0002A38E /* resizableButtonHighlighted.png */,
+				14BAD1E9187B9F8B0002A38E /* resizableButton.png */,
+				14BAD1EA187B9F8B0002A38E /* resizableButtonHighlighted@2x.png */,
+				14BAD1DF187B9B3B0002A38E /* cover@2x.png */,
+				14BAD1E0187B9B3B0002A38E /* cover.png */,
+				14BAD1E1187B9B3B0002A38E /* bg@2x.png */,
+				14BAD1E2187B9B3B0002A38E /* bg.png */,
+				14305A87187B427400C7AC8B /* coffee_cup.png */,
+				14305A88187B427400C7AC8B /* coffee_cup@2x.png */,
+				14305A89187B427400C7AC8B /* espresso_cup.png */,
+				14305A8A187B427400C7AC8B /* espresso_cup@2x.png */,
+				14305A8B187B427400C7AC8B /* tea_cup.png */,
+				14305A8C187B427400C7AC8B /* tea_cup@2x.png */,
+				14305A5F187B1CD700C7AC8B /* beans.png */,
+				14305A60187B1CD700C7AC8B /* beans@2x.png */,
+				14305A61187B1CD700C7AC8B /* coffee.png */,
+				14305A62187B1CD700C7AC8B /* coffee@2x.png */,
+				14305A63187B1CD800C7AC8B /* espresso.png */,
+				14305A64187B1CD800C7AC8B /* espresso@2x.png */,
+				14305A65187B1CD800C7AC8B /* filter.png */,
+				14305A66187B1CD800C7AC8B /* filter@2x.png */,
+				14305A67187B1CD800C7AC8B /* grounds.png */,
+				14305A68187B1CD800C7AC8B /* grounds@2x.png */,
+				14305A69187B1CD800C7AC8B /* leaves.png */,
+				14305A6A187B1CD800C7AC8B /* leaves@2x.png */,
+				14305A6D187B1CD800C7AC8B /* strainer.png */,
+				14305A6E187B1CD800C7AC8B /* strainer@2x.png */,
+				14305A6F187B1CD800C7AC8B /* tamper.png */,
+				14305A70187B1CD800C7AC8B /* tamper@2x.png */,
+				14305A71187B1CD800C7AC8B /* teapot.png */,
+				14305A72187B1CD800C7AC8B /* teapot@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14305A1F187B1C0C00C7AC8B /* EspressoBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14305A55187B1C0C00C7AC8B /* Build configuration list for PBXNativeTarget "EspressoBar" */;
+			buildPhases = (
+				10206E45DCEE405DB88736A6 /* Check Pods Manifest.lock */,
+				14305A1C187B1C0C00C7AC8B /* Sources */,
+				14305A1D187B1C0C00C7AC8B /* Frameworks */,
+				14305A1E187B1C0C00C7AC8B /* Resources */,
+				E7897E92717442E291C6CE8B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EspressoBar;
+			productName = EspressoBar;
+			productReference = 14305A20187B1C0C00C7AC8B /* EspressoBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14305A43187B1C0C00C7AC8B /* EspressoBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14305A58187B1C0C00C7AC8B /* Build configuration list for PBXNativeTarget "EspressoBarTests" */;
+			buildPhases = (
+				14305A40187B1C0C00C7AC8B /* Sources */,
+				14305A41187B1C0C00C7AC8B /* Frameworks */,
+				14305A42187B1C0C00C7AC8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14305A4A187B1C0C00C7AC8B /* PBXTargetDependency */,
+			);
+			name = EspressoBarTests;
+			productName = EspressoBarTests;
+			productReference = 14305A44187B1C0C00C7AC8B /* EspressoBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14305A18187B1C0C00C7AC8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Sean Ooi";
+				TargetAttributes = {
+					14305A43187B1C0C00C7AC8B = {
+						TestTargetID = 14305A1F187B1C0C00C7AC8B;
+					};
+				};
+			};
+			buildConfigurationList = 14305A1B187B1C0C00C7AC8B /* Build configuration list for PBXProject "EspressoBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14305A17187B1C0C00C7AC8B;
+			productRefGroup = 14305A21187B1C0C00C7AC8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14305A1F187B1C0C00C7AC8B /* EspressoBar */,
+				14305A43187B1C0C00C7AC8B /* EspressoBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14305A1E187B1C0C00C7AC8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14305A78187B1CD800C7AC8B /* espresso@2x.png in Resources */,
+				14BAD1E3187B9B3B0002A38E /* cover@2x.png in Resources */,
+				14BAD1ED187B9F8B0002A38E /* resizableButton.png in Resources */,
+				14BAD1E6187B9B3B0002A38E /* bg.png in Resources */,
+				14305A8E187B427400C7AC8B /* coffee_cup@2x.png in Resources */,
+				14305A7D187B1CD800C7AC8B /* leaves.png in Resources */,
+				14305A81187B1CD800C7AC8B /* strainer.png in Resources */,
+				14305A75187B1CD800C7AC8B /* coffee.png in Resources */,
+				14305A91187B427400C7AC8B /* tea_cup.png in Resources */,
+				14305A85187B1CD800C7AC8B /* teapot.png in Resources */,
+				14305A7B187B1CD800C7AC8B /* grounds.png in Resources */,
+				14305A3A187B1C0C00C7AC8B /* Main_iPad.storyboard in Resources */,
+				14305A76187B1CD800C7AC8B /* coffee@2x.png in Resources */,
+				14305A7A187B1CD800C7AC8B /* filter@2x.png in Resources */,
+				14305A3F187B1C0C00C7AC8B /* Images.xcassets in Resources */,
+				14305A8D187B427400C7AC8B /* coffee_cup.png in Resources */,
+				14305A37187B1C0C00C7AC8B /* Main_iPhone.storyboard in Resources */,
+				14305A2E187B1C0C00C7AC8B /* InfoPlist.strings in Resources */,
+				14BAD1F2187BA2E60002A38E /* tileable_wood_texture.png in Resources */,
+				14305A8F187B427400C7AC8B /* espresso_cup.png in Resources */,
+				14305A82187B1CD800C7AC8B /* strainer@2x.png in Resources */,
+				14305A83187B1CD800C7AC8B /* tamper.png in Resources */,
+				14305A86187B1CD800C7AC8B /* teapot@2x.png in Resources */,
+				14305A7E187B1CD800C7AC8B /* leaves@2x.png in Resources */,
+				14305A84187B1CD800C7AC8B /* tamper@2x.png in Resources */,
+				14BAD1EE187B9F8B0002A38E /* resizableButtonHighlighted@2x.png in Resources */,
+				14BAD1EB187B9F8B0002A38E /* resizableButton@2x.png in Resources */,
+				14305A74187B1CD800C7AC8B /* beans@2x.png in Resources */,
+				14305A92187B427400C7AC8B /* tea_cup@2x.png in Resources */,
+				14305A77187B1CD800C7AC8B /* espresso.png in Resources */,
+				14305A7C187B1CD800C7AC8B /* grounds@2x.png in Resources */,
+				14BAD1E5187B9B3B0002A38E /* bg@2x.png in Resources */,
+				14BAD1EC187B9F8B0002A38E /* resizableButtonHighlighted.png in Resources */,
+				14305A73187B1CD800C7AC8B /* beans.png in Resources */,
+				14BAD1E4187B9B3B0002A38E /* cover.png in Resources */,
+				14BAD1F1187BA2E60002A38E /* tileable_wood_texture_@2X.png in Resources */,
+				14305A79187B1CD800C7AC8B /* filter.png in Resources */,
+				14305A90187B427400C7AC8B /* espresso_cup@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14305A42187B1C0C00C7AC8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14305A50187B1C0C00C7AC8B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10206E45DCEE405DB88736A6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7897E92717442E291C6CE8B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14305A1C187B1C0C00C7AC8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14305A3D187B1C0C00C7AC8B /* ViewController.m in Sources */,
+				14305A34187B1C0C00C7AC8B /* AppDelegate.m in Sources */,
+				14305A5D187B1CC400C7AC8B /* ZCSlotMachine.m in Sources */,
+				14305A30187B1C0C00C7AC8B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14305A40187B1C0C00C7AC8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14305A52187B1C0C00C7AC8B /* EspressoBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14305A4A187B1C0C00C7AC8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14305A1F187B1C0C00C7AC8B /* EspressoBar */;
+			targetProxy = 14305A49187B1C0C00C7AC8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14305A2C187B1C0C00C7AC8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14305A2D187B1C0C00C7AC8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		14305A35187B1C0C00C7AC8B /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14305A36187B1C0C00C7AC8B /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		14305A38187B1C0C00C7AC8B /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14305A39187B1C0C00C7AC8B /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		14305A4E187B1C0C00C7AC8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14305A4F187B1C0C00C7AC8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14305A53187B1C0C00C7AC8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14305A54187B1C0C00C7AC8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14305A56187B1C0C00C7AC8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D99AD09FA75E4A7A90D2702B /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EspressoBar/EspressoBar-Prefix.pch";
+				INFOPLIST_FILE = "EspressoBar/EspressoBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		14305A57187B1C0C00C7AC8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D99AD09FA75E4A7A90D2702B /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EspressoBar/EspressoBar-Prefix.pch";
+				INFOPLIST_FILE = "EspressoBar/EspressoBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		14305A59187B1C0C00C7AC8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EspressoBar.app/EspressoBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EspressoBar/EspressoBar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EspressoBarTests/EspressoBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		14305A5A187B1C0C00C7AC8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EspressoBar.app/EspressoBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EspressoBar/EspressoBar-Prefix.pch";
+				INFOPLIST_FILE = "EspressoBarTests/EspressoBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14305A1B187B1C0C00C7AC8B /* Build configuration list for PBXProject "EspressoBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14305A53187B1C0C00C7AC8B /* Debug */,
+				14305A54187B1C0C00C7AC8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14305A55187B1C0C00C7AC8B /* Build configuration list for PBXNativeTarget "EspressoBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14305A56187B1C0C00C7AC8B /* Debug */,
+				14305A57187B1C0C00C7AC8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14305A58187B1C0C00C7AC8B /* Build configuration list for PBXNativeTarget "EspressoBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14305A59187B1C0C00C7AC8B /* Debug */,
+				14305A5A187B1C0C00C7AC8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14305A18187B1C0C00C7AC8B /* Project object */;
+}
